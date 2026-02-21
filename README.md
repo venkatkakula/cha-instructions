@@ -1,1 +1,1 @@
-(https://venkatkakula.github.io/cha-instructions/)
+https://venkatkakula.github.io/cha-instructions/
