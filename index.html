@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Grid</title>
+
+    <style>
+        :root {
+            --bg: #f8f9fb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --accent: #3b82f6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Coding Apps in AppLab Code.org</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/01fS7uMnDxc?si=Lv46GPDIllFQRQNV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app using labels, images, buttons and sound - Episode 1 code.org AppLab
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/73UtW0ekjKw?si=Kw3sU5loODyBHuil"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app using Variables, labels, images, buttons and sound - Episode 2 code.org
+                            AppLab
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/80RJzz80xGo?si=nmMfzSRTtc1nxWGh"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app using labels, images, buttons and sound - Episode 3 code.org AppLab
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/4-onvO0Bj5c?si=SK4E_DCE_b5kwn6e"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app using Random number generators and if statements - Episode 4 code.org
+                            AppLab
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/PgayzHvGEaA?si=NhZWKVOBu6-PBBg6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app using lists and random number generators - Episode 5 code.org AppLab
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/kln8rMybTQE?si=etU3ZbPn7MECUltV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app variables, random number generators and if statements - Episode 6
+                            AppLab
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/MKyBOTKQkiM?si=2lW7ULmF4OvBw8tO"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div class="description">
+                            How to create an app using Variables and if statements - Episode 7 code.org AppLab
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
